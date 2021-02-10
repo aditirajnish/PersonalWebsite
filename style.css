@@ -1,0 +1,200 @@
+.filtr-item {
+    padding-top:30px
+}
+
+.filtr-controls span {
+    cursor:pointer
+}
+
+.filtr-controls span.active {
+    left: 0;
+    background-color:#c0ad60 !important
+}
+
+.filtr-loading {
+    border: 5px solid #333;
+    position: relative;
+    border-radius: 40px;
+    height: 40px;
+    left: 50%;
+    margin: 80px 0;
+    opacity: 0;
+    top: 0;
+    width: 40px;
+    z-index: 2;
+    -webkit-animation: 1s ease-out infinite pulsate;
+    animation:1s ease-out infinite pulsate
+}
+
+#portfolio {
+    background: rgba(197, 219, 248, .92);
+    text-align:center
+}
+
+#portfolio .container span {
+    background: #fff;
+    padding: 0 18px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px
+}
+
+#portfolio .container .filtr-container img {
+    width:90%
+}
+
+.gallery-pt--body {
+    display: inline-block;
+    padding: 0;
+    margin:0
+}
+
+.gallery-pt--filter-container {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    text-decoration:none
+}
+
+.gallery-pt--filter-container a {
+    color: #ccc;
+    text-decoration:none
+}
+
+.gallery-pt--filter-container .list-item {
+    padding: 0;
+    margin:0
+}
+
+.gallery-pt--filter-container li:after {
+    content: " / ";
+    color:#ddd
+}
+
+.gallery-pt--filter-container li:last-child:after {
+    content: ""
+}
+
+.gallery-pt--filter-container li a:hover {
+    color:#4cb1f9
+}
+
+.gallery-pt--filter-container li.active a {
+    color:#90ee90
+}
+
+.gallery-pt--body .thumbnail {
+    border:none
+}
+
+.gallery-pt--body .item {
+    padding:0
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box
+}
+
+#portfolio p, .footer-text {
+    color:#000
+}
+
+#portfolio h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color:#000
+}
+
+#portfolio h2::after {
+    content: '';
+    background-color: #000;
+    width: 100px;
+    height: 3px;
+    display: block;
+    content: '';
+    text-align: center;
+    margin:15px auto auto
+}
+
+#portfolio .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin:0 auto
+}
+
+#portfolio .into p {
+    margin-bottom:0
+}
+
+.keyword-highlight {
+    color:#00f
+}
+
+.self-highlight {
+    color:#c0ad60
+}
+
+.string-highlight {
+    color:#1c9a29
+}
+
+.skills-typer {
+    font-size: 20px;
+    margin: 0;
+    font-family: "Courier New";
+    color: #fff;
+    overflow-wrap: break-word;
+    word-wrap:break-word
+}
+
+.main-desc {
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    max-height: 40px;
+    padding-top:25%
+}
+
+.passion {
+    color: #9ac5fe;
+    font-weight: 600;
+    display:inline
+}
+
+.container.skills-container {
+    color: #000;
+    padding: 10px;
+    background:rgba(221, 221, 221, .9)
+}
+
+body {
+    color:#fff
+}
+
+h2::after {
+    background-color: #000;
+    width: 15%;
+    height: 3px;
+    display: block;
+    content: '';
+    text-align: center;
+    margin:15px auto auto
+}
+
+.sec-heading {
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: #000;
+    text-align:center
+}
+
+.project-button {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif
+}
