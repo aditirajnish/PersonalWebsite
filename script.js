@@ -1176,8 +1176,15 @@ var languagesHTML = '\n<pre id="languages-typer" class="typewriter">\n<span clas
         cursor: ""
     }),
     showSkills = 0;
-$(window).scroll((function() {
-    var t = $("#scroll-event").offset().top;
-    $(window).height();
-    t <= $(this).scrollTop() && !showSkills && (showSkills = 1, typewriterLanguages.typeString(languagesHTML).start(), typewriterTools.typeString(toolsHTML).start(), typewriterTechnologies.typeString(technologiesHTML).start())
-}));
+$(window).scroll(function() {
+   var hT = $('#skills').offset().top,
+       hH = $('#skills').height(),
+       wS = $(this).scrollTop(),
+       wH = $(this).height();
+   if (hT+hH<=(wS+wH) && !showSkills){ // technical skills typewriter animation begins when bottom of empty skills container is in view
+       showSkills = 1; 
+       typewriterLanguages.typeString(languagesHTML).start();
+       typewriterTools.typeString(toolsHTML).start();
+       typewriterTechnologies.typeString(technologiesHTML).start();
+   }
+});
